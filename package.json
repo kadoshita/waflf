@@ -1,0 +1,39 @@
+{
+  "name": "waflf",
+  "version": "0.0.1",
+  "description": "The Web Application Framework like fetch",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build tsconfig.json",
+    "dev": "ts-node-dev ./src/main.ts",
+    "start": "node ./build/main.js",
+    "test": "jest --config jest.config.json",
+    "lint": "eslint ./src/ ./__tests__/ --ext .ts",
+    "fix": "eslint ./src/ ./__tests__/ --ext .ts --fix",
+    "format": "prettier --write ./**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadoshita/waflf.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kadoshita/waflf/issues"
+  },
+  "homepage": "https://github.com/kadoshita/waflf#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
