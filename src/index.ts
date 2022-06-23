@@ -12,3 +12,5 @@ const main = (path: string, options: WaflfOptions) => {
     });
 };
 export default main;
+
+module.exports = main;

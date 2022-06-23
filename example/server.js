@@ -1,7 +1,9 @@
-const { default: waflf } = require('waflf');
+const waflf = require('waflf');
 
 (async () => {
+    console.log('server start');
     for (; ;) {
+        console.log('request waiting...');
         const helloRoute = await waflf('/hello', {
             method: 'post',
         });
