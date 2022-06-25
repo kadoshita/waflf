@@ -1,4 +1,6 @@
-const waflf = require('waflf');
+const { waflf, waflfInit } = require('waflf');
+
+waflfInit({ port: 3000 });
 
 (async () => {
     console.log('server start');
