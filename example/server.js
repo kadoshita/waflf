@@ -1,4 +1,4 @@
-const { waflf, waflfInit } = require('waflf');
+const { default: waflf, init: waflfInit } = require('waflf');
 
 waflfInit({ port: 3000 });
 
